@@ -1,21 +1,12 @@
 {
   "name": "angular4-counter-up",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Angular4 CounterUp module",
-  "files": [
-    "module/*",
-    "public_api.d.ts",
-    "public_api.ts"
-  ],
-  "main": "public_api.js",
+  "main": "index.js",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build --prod",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e",
+    "start": "ng serve --aot",
     "packagr": "ng-packagr -p ng-package.json"
   },
   "repository": {

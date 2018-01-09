@@ -62,7 +62,7 @@ export class CounterUpDirective implements OnInit, OnChanges, OnDestroy {
 
   constructor(
     protected el: ElementRef,
-    @Inject(CounterUpConfig) config: CounterUpConfigArgs
+    config: CounterUpConfig
   ) {
     this._delay = config.delay;
     if (this._delay <= 0) {
