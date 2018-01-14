@@ -1,7 +1,7 @@
 import { NgModule, ModuleWithProviders, InjectionToken, ANALYZE_FOR_ENTRY_COMPONENTS } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CounterUpDirective } from './counter-up.directive';
-import { CounterUpConfig, CounterUpConfigArgs } from './counter-up-config';
+import { CounterUpConfig, CounterUpConfigArgs } from './counter-up.config';
 
 export const CounterUpOptions = new InjectionToken<CounterUpConfigArgs>('config');
 

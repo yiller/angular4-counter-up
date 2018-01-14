@@ -1,5 +1,5 @@
 import { Directive, Inject, OnInit, OnDestroy, OnChanges, Input, Output, EventEmitter, ElementRef } from '@angular/core';
-import { CounterUpConfig, CounterUpConfigArgs } from './counter-up-config';
+import { CounterUpConfig, CounterUpConfigArgs } from './counter-up.config';
 
 @Directive({
   selector: '[counter-up]'
@@ -62,7 +62,7 @@ export class CounterUpDirective implements OnInit, OnChanges, OnDestroy {
 
   constructor(
     protected el: ElementRef,
-    config: CounterUpConfig
+    @Inject(CounterUpConfig) config: CounterUpConfig
   ) {
     this._delay = config.delay;
     if (this._delay <= 0) {

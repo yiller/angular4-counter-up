@@ -6,7 +6,6 @@ export interface CounterUpConfigArgs {
   beginAt?: number;
 }
 
-@Injectable()
 export class CounterUpConfig implements CounterUpConfigArgs {
 
   delay = 10;
